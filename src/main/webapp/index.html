@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Student Registration Form</h2>
+  <form action="success" method="post">
+    <label>Student ID</label>
+    <input type="text" name="studentId" required>
+
+    <label>First Name</label>
+    <input type="text" name="firstName" required>
+
+    <label>Last Name</label>
+    <input type="text" name="lastName" required>
+
+    <label>Gender</label>
+    <select name="gender" required>
+      <option value="">--Select--</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label>Date of Birth</label>
+    <input type="date" name="dob" required>
+
+    <label>Email</label>
+    <input type="email" name="email" required>
+
+    <label>Phone Number</label>
+    <input type="text" name="phone" required>
+
+    <label>Address</label>
+    <textarea name="address" rows="3" required></textarea>
+
+    <label>City</label>
+    <input type="text" name="city" required>
+
+    <label>State</label>
+    <input type="text" name="state" required>
+
+    <label>Pin Code</label>
+    <input type="text" name="pincode" required>
+
+    <label>Country</label>
+    <input type="text" name="country" value="India" required>
+
+    <label>Course</label>
+    <select name="course" required>
+      <option value="">--Select--</option>
+      <option value="B.Tech">B.Tech</option>
+      <option value="B.Sc">B.Sc</option>
+      <option value="BCA">BCA</option>
+      <option value="MBA">MBA</option>
+    </select>
+
+    <label>Branch</label>
+    <input type="text" name="branch" required>
+
+    <label>Year of Admission</label>
+    <input type="number" name="admissionYear" required>
+
+    <label>Password</label>
+    <input type="password" name="password" required>
+
+    <button type="submit">Register</button>
+  </form>
+
+</body>
+</html>
